@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --claro: #fffdda;
+    --escuro: #273f00;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.quadro{
+    height: 100vh;
+    display: grid;
+    grid-column: auto;
+    place-content: center;
+    gap: 1rem;
+    text-align: justify;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+strong{
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.claro strong:hover{
+    padding: 0;
+    background-color: var(--escuro);
+    color: var(--claro);
+    cursor: pointer;
+}
+
+.escuro strong:hover{
+    padding: 0;
+    background-color: var(--claro);
+    color: var(--escuro);
+    cursor: pointer;
+}
+
+.claro{
+    
+    background-color: var(--claro);
+    color: var(--escuro);
+    padding: 0 5rem;
+}
+
+.escuro{
+    background-color: var(--escuro);
+    color: var(--claro);
+    padding: 0 5rem;
+}
